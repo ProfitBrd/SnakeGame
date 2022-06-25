@@ -40,8 +40,6 @@ class Snake:
         # draw snake blocks onto background
         for i in range(self.length):
             self.parentSurface.blit(self.snakeBlock, (self.posX[i], self.posY[i]))
-        # to update the background after filling
-        pygame.display.update()
 
     def moveRight(self):
         #self.posX += self.sizeBlock
